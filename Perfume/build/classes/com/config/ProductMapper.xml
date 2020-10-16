@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ProductMapper">
+	<select id="ProductList" resultType="ProductDTO">
+	select * 
+	from product
+	</select>
+	<select id="PdetailsList" resultType="PdetailsDTO">
+	select * 
+	from Pdetails
+	</select>
+	<select id="NoteList" parameterType="int" resultType="NoteDTO">
+	select * 
+	from Note
+	where pnum = #{pnum}
+	</select>
+  	<select id="BrandList" parameterType="int" resultType="BrandDTO">
+  	select * 
+  	from brand
+  	where bnum = #{bnum}
+  	</select>
+  
+  
+</mapper>
