@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+div{
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;	
+}
+.productImg{
+	width: 100px;
+	height: 100px;
+}
